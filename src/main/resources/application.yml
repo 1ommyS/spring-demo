@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://194.67.105.79:5432/dpp_platform_db"
+    username: dpp_platform
+    password: ino_govno
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) %logger{36} %M - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} %M - %msg%n"
+  file:
+    name: log.txt
+  level.root: info
